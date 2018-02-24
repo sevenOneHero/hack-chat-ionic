@@ -1,14 +1,55 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
+    <div class="row">
+        <ion-title text-left>
+            <h6 class="title">{{mChannel}}</h6>
+        </ion-title>
+        <ion-icon class="title" name="share-alt" (click)="invite()" float-right padding-right padding-top></ion-icon>
+        <ion-icon class="title" name="brush" (click)="toggleTheme()" float-right padding-right padding-top></ion-icon>
+    </div>
 </ion-header>
+<ion-content class="ion-content">
+    <ion-list no-lines>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+        <div class="cmd" *ngFor="let feed of mFeed" color="feed_item">
+            <div [ngSwitch]="feed.cmd">
+                <div *ngSwitchCase="'chat'">
+                    <p class="chat nick" (mousedown)="$event.preventDefault(); addNickToMessage(feed.nick)">{{feed.nick}}
+                        <span class="chat text">{{feed.text}}</span>
+                    </p>
+                </div>
+                <div class="onlineset" *ngSwitchCase="'onlineSet'">
+                    <p class="onlineset">Users online:
+                        <span class="onlineset nick" (mousedown)="$event.preventDefault(); addNickToMessage(nick)" *ngFor="let nick of feed.nicks">{{nick}}, </span>
+                    </p>
+                </div>
+                <div *ngSwitchCase="'onlineRemove'">
+                    <p class="onlineremove nick">{{feed.nick}} left </p>
+                </div>
+                <div *ngSwitchCase="'onlineAdd'">
+                    <p class="onlineadd nick">{{feed.nick}} joined </p>
+                </div>
+                <div *ngSwitchCase="'warn'">
+                    <p class="warn">{{feed.text}} </p>
+                </div>
+                <div class="default" *ngSwitchDefault>
+                    <p>{{ feed | json }}</p>
+                </div>
+            </div>
+        </div>
+    </ion-list>
+
 </ion-content>
+
+<ion-footer class="input">
+    <div class="row">
+        <ion-input id="inputID" clearInput class="input_message" [(ngModel)]="inputMessage">
+        </ion-input>
+
+        <label for="inputID" class="send-chat">
+            <ion-icon (mousedown)="$event.preventDefault(); sendMessage();" float-right padding name="send"></ion-icon>
+        </label>
+
+
+    </div>
+
+</ion-footer>

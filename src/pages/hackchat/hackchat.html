@@ -1,0 +1,32 @@
+<ion-content class="content" padding>
+
+    
+  <pre class="logo">
+   _           _         _       _   
+  | |_ ___ ___| |_   ___| |_ ___| |_ 
+  |   |_ ||  _| '_| |  _|   |_ ||  _|
+  |_|_|__/|___|_,_|.|___|_|_|__/|_| 
+  </pre>
+
+  <pre  class="description">
+
+Welcome to hack.chat, a minimal, distraction-free chat application.
+Channels are created and joined by going to https://hack.chat/?your-channel. There are no channel lists, so a secret channel name can be used for private discussions.
+
+Here are some pre-made channels you can join:
+<span (click)='onChannelSelected(channel)' class="channel" *ngFor="let channel of predefinedChannels"> ?{{channel}} </span>
+<span class="channel" (click)="doPrompt()">
+  Enter Channel Name
+</span>
+
+Server and web client released under the MIT open source license.
+No message history is retained on the hack.chat server.
+
+
+
+
+
+  </pre>
+
+
+</ion-content>

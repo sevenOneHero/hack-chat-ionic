@@ -1,0 +1,10 @@
+
+
+<ion-content>
+  <ion-list no-lines>
+    <ion-list-header class="title">
+      Select Theme
+    </ion-list-header>
+    <ion-item class="content" *ngFor="let theme of mThemes" (click)="selectTheme(theme)">{{theme}}</ion-item>
+  </ion-list>
+</ion-content>

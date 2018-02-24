@@ -33,12 +33,47 @@ $app-direction: ltr;
 // colors so you can add, rename and remove colors as needed.
 // The "primary" color is the only required color in the map.
 
+@import "theme.light";
+@import "theme.default";
+@import "theme.twitter";
+
 $colors: (
   primary:    #488aff,
   secondary:  #32db64,
   danger:     #f53d3d,
-  light:      #f4f4f4,
-  dark:       #222
+  default: (
+    base: black,
+    contrast: #ffffff
+  ),
+  dark: (
+    base: black,
+    contrast: #ffffff
+  ),
+  twitter: (
+    base: #55acee,
+    contrast: #ffffff
+  ),
+  blue: (
+    base: navy,
+    contrast: #ffffff
+  ),
+  wheat: (
+    base: wheat,
+    contrast: black
+  ),
+  light: (
+    base: whitesmoke,
+    contrast: #000000
+  ),red: (
+    base: maroon,
+    contrast: #000000
+  ),crimsonred: (
+    base: crimson,
+    contrast: #000000
+  ),gray: (
+    base: darkgray,
+    contrast: #000000
+  )
 );
 
 

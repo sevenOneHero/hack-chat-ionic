@@ -1,3 +1,553 @@
-page-home {
+a {
+    color: black;
+}
 
+.light {
+    page-home {
+        
+            .title {
+                color: black;
+            }
+            color: white;
+            font-size: 15px;
+            .ion-content {
+                background: color($colors, light, base);
+                padding: 10px;        
+            }
+        
+            .cmd{
+            }
+        
+        
+            .nick {
+                color: black;
+            }
+        
+            .warn {
+                color: wheat;
+            }
+        
+            .chat.nick {
+                color: violet;
+                font-weight: bold;
+            }
+        
+            .chat.text {
+                color: black;
+                font-weight: normal;
+            }
+        
+            .onlineadd.nick, onlinermove.nick {
+                color: green;
+            }
+        
+        
+            .onlineset {
+                color: green;
+            }
+        
+            .input {
+                color: black;
+                border-top: 0.5px dotted black;
+            }
+        
+            .send_input {
+                color: black;
+            }
+        
+            .input_message {
+                width: 100%;
+            }
+            .alnright { 
+                align-items: right;
+                align-content: right;
+                text-align: right; }
+        }
+        
+}
+
+.dark {
+    page-home {
+        
+            .title {
+                color: whitesmoke;
+            }
+            color: white;
+            font-size: 15px;
+            .ion-content {
+                background: color($colors, dark, base);
+                padding: 10px;        
+            }
+        
+            .cmd{
+            }
+        
+        
+            .nick {
+                color: white;
+            }
+        
+            .warn {
+                color: wheat;
+            }
+        
+            .chat.nick {
+                color: violet;
+                font-weight: bold;
+            }
+        
+            .chat.text {
+                color: whitesmoke;
+            }
+        
+            .onlineadd.nick, onlinermove.nick {
+                color: greenyellow;
+            }
+        
+        
+            .onlineset {
+                color: greenyellow;
+            }
+        
+            .input {
+                color: whitesmoke;
+                border-top: 0.5px dotted whitesmoke;
+            }
+        
+            .send_input {
+                color: whitesmoke;
+            }
+        
+            .input_message {
+                width: 100%;
+            }
+            .alnright { 
+                align-items: right;
+                align-content: right;
+                text-align: right; }
+        }
+        
+}
+
+.wheat {
+    page-home {   
+        .title {
+            color: black;
+        }
+        color: white;
+        font-size: 15px;
+        .ion-content {
+            background: color($colors, wheat, base);
+            padding: 10px;        
+        }
+    
+        .cmd{
+        }
+       
+        .nick {
+            color: white;
+        }
+    
+        .warn {
+            color: wheat;
+        }
+    
+        .chat.nick {
+            color: violet;
+        }
+    
+        .chat.text {
+            color: black;
+        }
+    
+        .onlineadd.nick, onlinermove.nick {
+            color: green;
+        }
+    
+    
+        .onlineset {
+            color: green;
+        }
+    
+        .input {
+            color: black;
+            border-top: 0.5px dotted whitesmoke;
+        }
+    
+        .send_input {
+            color: whitesmoke;
+        }
+    
+        .input_message {
+            width: 100%;
+        }
+        .alnright { 
+            align-items: right;
+            align-content: right;
+            text-align: right; }
+    } 
+}
+.twitter {
+    page-home {
+        
+            .title {
+                color: whitesmoke;
+            }
+            color: white;
+            font-size: 15px;
+            .ion-content {
+                background: color($colors, twitter, base);
+                padding: 10px;        
+            }
+        
+            .cmd{
+            }
+        
+        
+            .nick {
+                color: white;
+            }
+        
+            .warn {
+                color: wheat;
+            }
+        
+            .chat.nick {
+                color: purple;
+                font-weight: bold;
+            }
+        
+            .chat.text {
+                color: whitesmoke;
+            }
+        
+            .onlineadd.nick, onlinermove.nick {
+                color: greenyellow;
+            }
+        
+        
+            .onlineset {
+                color: greenyellow;
+            }
+        
+            .input {
+                color: whitesmoke;
+                border-top: 0.5px dotted whitesmoke;
+            }
+        
+            .send_input {
+                color: whitesmoke;
+            }
+        
+            .input_message {
+                width: 100%;
+            }
+            .alnright { 
+                align-items: right;
+                align-content: right;
+                text-align: right; }
+        }
+        
+}
+
+.red {
+    page-home {
+        
+            .title {
+                color: whitesmoke;
+            }
+            background: black;
+            color: white;
+            font-size: 15px;
+            .ion-content {
+                background: color($colors, red, base);
+                padding: 10px;        
+            }
+        
+            .cmd{
+            }
+        
+        
+            .nick {
+                color: white;
+            }
+        
+            .warn {
+                color: wheat;
+            }
+        
+            .chat.nick {
+                color: violet;
+            }
+        
+            .chat.text {
+                color: whitesmoke;
+            }
+        
+            .onlineadd.nick, onlinermove.nick {
+                color: greenyellow;
+            }
+        
+        
+            .onlineset {
+                color: greenyellow;
+            }
+        
+            .input {
+                color: whitesmoke;
+                border-top: 0.5px dotted whitesmoke;
+            }
+        
+            .send_input {
+                color: whitesmoke;
+            }
+        
+            .input_message {
+                width: 100%;
+            }
+            .alnright { 
+                align-items: right;
+                align-content: right;
+                text-align: right; }
+        } 
+}
+
+.default {
+    page-home {   
+            .title {
+                color: whitesmoke;
+            }
+            color: white;
+            font-size: 15px;
+            .ion-content {
+                background: color($colors, default, base);
+                padding: 10px;        
+            }
+        
+            .cmd{
+            }
+        
+        
+            .nick {
+                color: white;
+            }
+        
+            .warn {
+                color: wheat;
+            }
+        
+            .chat.nick {
+                color: violet;
+            }
+        
+            .chat.text {
+                color: whitesmoke;
+            }
+        
+            .onlineadd.nick, onlinermove.nick {
+                color: greenyellow;
+            }
+        
+        
+            .onlineset {
+                color: greenyellow;
+            }
+        
+            .input {
+                color: whitesmoke;
+                border-top: 0.5px dotted whitesmoke;
+            }
+        
+            .send_input {
+                color: whitesmoke;
+            }
+        
+            .input_message {
+                width: 100%;
+            }
+            .alnright { 
+                align-items: right;
+                align-content: right;
+                text-align: right; }
+        } 
+}
+
+.blue {
+    page-home {   
+        .title {
+            color: whitesmoke;
+        }
+        color: white;
+        font-size: 15px;
+        .ion-content {
+            background: color($colors, blue, base);
+            padding: 10px;        
+        }
+    
+        .cmd{
+        }
+    
+    
+        .nick {
+            color: white;
+        }
+    
+        .warn {
+            color: wheat;
+        }
+    
+        .chat.nick {
+            color: violet;
+        }
+    
+        .chat.text {
+            color: whitesmoke;
+        }
+    
+        .onlineadd.nick, onlinermove.nick {
+            color: greenyellow;
+        }
+    
+    
+        .onlineset {
+            color: greenyellow;
+        }
+    
+        .input {
+            color: whitesmoke;
+            border-top: 0.5px dotted whitesmoke;
+        }
+    
+        .send_input {
+            color: whitesmoke;
+        }
+    
+        .input_message {
+            width: 100%;
+        }
+        .alnright { 
+            align-items: right;
+            align-content: right;
+            text-align: right; }
+    } 
+}
+
+.crimsonred {
+    page-home {   
+        .title {
+            color: whitesmoke;
+        }
+        color: white;
+        font-size: 15px;
+        .ion-content {
+            background: color($colors, crimsonred, base);
+            padding: 10px;        
+        }
+    
+        .cmd{
+        }
+    
+    
+        .nick {
+            color: white;
+        }
+    
+        .warn {
+            color: wheat;
+        }
+    
+        .chat.nick {
+            color: violet;
+        }
+    
+        .chat.text {
+            color: whitesmoke;
+        }
+    
+        .onlineadd.nick, onlinermove.nick {
+            color: greenyellow;
+        }
+    
+    
+        .onlineset {
+            color: greenyellow;
+        }
+    
+        .input {
+            color: whitesmoke;
+            border-top: 0.5px dotted whitesmoke;
+        }
+    
+        .send_input {
+            color: whitesmoke;
+        }
+    
+        .input_message {
+            width: 100%;
+        }
+        .alnright { 
+            align-items: right;
+            align-content: right;
+            text-align: right; }
+    } 
+}
+
+.gray {
+    page-home {   
+        .title {
+            color: whitesmoke;
+        }
+        color: white;
+        font-size: 15px;
+        .ion-content {
+            background: color($colors, gray, base);
+            padding: 10px;        
+        }
+    
+        .cmd{
+        }
+    
+    
+        .nick {
+            color: white;
+        }
+    
+        .warn {
+            color: wheat;
+        }
+    
+        .chat.nick {
+            color: purple;
+        }
+    
+        .chat.text {
+            color: whitesmoke;
+        }
+    
+        .onlineadd.nick, onlinermove.nick {
+            color: greenyellow;
+        }
+    
+    
+        .onlineset {
+            color: greenyellow;
+        }
+    
+        .input {
+            color: whitesmoke;
+            border-top: 0.5px dotted whitesmoke;
+        }
+    
+        .send_input {
+            color: whitesmoke;
+        }
+    
+        .input_message {
+            width: 100%;
+        }
+        .alnright { 
+            align-items: right;
+            align-content: right;
+            text-align: right; }
+    } 
 }
